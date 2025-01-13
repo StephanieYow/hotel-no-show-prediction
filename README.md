@@ -184,7 +184,7 @@ Feature `country`
 
 Feature `arrival_month_no`
 > Most no-shows were observed to arrive between April and August based on `arrival_month`. `arrival_month_no` is a numerical representation of `arrival_month` in order to be fed into the model.
->
+
 > Example:
 > 
 > January: 1.0
