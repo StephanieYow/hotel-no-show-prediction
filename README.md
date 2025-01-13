@@ -13,8 +13,11 @@ Base folder contains
 
 Folder `src` contains
 > Folder `data`
+> 
 > `CustomTransformers.py` file
+> 
 > `Preprocess.py` file
+> 
 > `ModelPipeline.py` file
 
 Folder `data` contains
@@ -84,18 +87,27 @@ Dataset is imbalanced in favour of class 0 (63% of records). If the dataset is n
 
 > Example: 
 > No. of records (minority class) = 200
+> 
 > No. of records (majority class) = 300
+> 
 > Total no. of records = 500
+> 
 > Original weight (majority class) = 300 / 500 = 0.6
+> 
 > Down-sampling factor (majority class) = 300 / 200 = 1.5
+> 
 > Upweight (majority class) = 0.6 * 1.5 = 0.9
+> 
 > Upweight (minority class) = 0 --- *there should not be weight assigned to minority class*
 
 After randomly shuffling the dataset to minimise bias, setting feature and target `no_show` variables, the dataset undergoes a train-test split with 0.2 test size.
 
 > x_train.shape: (70758, 15)
+> 
 > y_train.shape: (70758, 1)
+> 
 > x_test.shape: (17690, 15)
+> 
 > y_test.shape: (17690, 1)
 
 Next we define the pipeline. Pipeline has 3 main steps:
@@ -140,8 +152,11 @@ Step 2: Further preprocessing
 
 Updated shapes:
 > x_train.shape: (70758, 7)
+> 
 > y_train.shape: (70758, 1)
+> 
 > x_test.shape: (17690, 7)
+> 
 > y_test.shape: (17690, 1)
 
 Step 3: Logistic regression model
@@ -170,11 +185,17 @@ Feature `arrival_month_no`
 > Most no-shows were observed to arrive between April and August based on `arrival_month`. `arrival_month_no` is a numerical representation of `arrival_month` in order to be fed into the model.
 >
 > Example:
+> 
 > January: 1.0
+> 
 > February: 2.0
+> 
 > March: 3.0
+> 
 > ...
+> 
 > November: 11.0
+> 
 > December: 12.0
 
 Feature `booking_month_no`
