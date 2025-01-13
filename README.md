@@ -4,8 +4,11 @@ Sunshine Hotels in Singapore wants to formulate policies to reduce expenses incu
 ## Contents
 Base folder contains
 > Folder `src`
+> 
 > `requirements.txt` file
+> 
 > Bash script `run.sh`
+> 
 > Jupyter notebook `eda.ipynb`
 
 Folder `src` contains
