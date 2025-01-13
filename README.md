@@ -98,7 +98,7 @@ Dataset is imbalanced in favour of class 0 (63% of records). If the dataset is n
 > 
 > Upweight (majority class) = 0.6 * 1.5 = 0.9
 > 
-> Upweight (minority class) = 0 --- *there should not be weight assigned to minority class*
+> Upweight (minority class) = 0 - *there should not be weight assigned to minority class*
 
 After randomly shuffling the dataset to minimise bias, setting feature and target `no_show` variables, the dataset undergoes a train-test split with 0.2 test size.
 
@@ -148,6 +148,7 @@ Step 2: Further preprocessing
 | price_per_night* | Normalised | float64 |
 
 *created,  not in original dataset
+
 ^original dtype was *object* before transformation
 
 Updated shapes:
