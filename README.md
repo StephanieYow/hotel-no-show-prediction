@@ -1,5 +1,5 @@
 ﻿## About
-Sunshine Hotels in Singapore wants to formulate policies to reduce expenses incurred due to no-shows. They requested use of analytics on over 100,000 customer records to understand behaviour of past no-shows and predict future no-shows. Both problem statement and dataset belong to AI Singapore's AI Apprenticeship Programme (AIAP(R))'s technical assessment past-year series.
+Sunshine Hotels in Singapore wants to formulate policies to reduce expenses incurred due to no-shows. They requested use of analytics on over 100,000 customer records to understand behaviour of past no-shows and predict future no-shows. Both problem statement and dataset belong to AI Singapore's AI Apprenticeship Programme (AIAP)'s technical assessment past-year series.
 
 ## Contents
 Base folder contains
