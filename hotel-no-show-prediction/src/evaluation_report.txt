@@ -1,0 +1,4 @@
+Metrics	 
+Accuracy Score	1.0
+F1 Score	1.0
+Log Loss	0.00013893922648469757
